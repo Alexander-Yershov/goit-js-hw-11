@@ -1,0 +1,28 @@
+.info {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba($color: rgb(109, 106, 106), $alpha: 0.9);
+  padding: 6px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  color: rgb(0, 162, 255);
+  padding: 2px 6px;
+  font-size: 14px;
+
+  &:not(:last-child) {
+    border-right: solid 1px rgb(0, 162, 255);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .info-item {
+    font-size: 16px;
+  }
+}
